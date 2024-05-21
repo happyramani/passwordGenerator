@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 html{
-  background-color: black;
+  background-color: gray;
 
+}
+
+#root{
+  margin-left: 5px;
+  margin-right: 5px;
 }

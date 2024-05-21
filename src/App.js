@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
+import {FaThumbsUp} from 'react-icons/fa6'
+import { RiCopyrightLine } from "react-icons/ri";
 
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
-
+    <>
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-black text-red-600" style={{alignItems:'center', backgroundColor:"black"}}>
       <h1 className='text-white text-center my-3'>Password generator</h1>
       <div className="flex shadow rounded-lg overflow-hidden mb-4">
@@ -92,6 +94,12 @@ function App() {
         </div>
       </div>
     </div>
+    <div className='flex justify-center items-center'>
+        <div className='text-2xl'>Thank you</div>
+        <div><FaThumbsUp className='text-2xl ml-1' /></div>
+      </div>
+      <div className='flex flexCenter justify-center text-2xl mt-1'>< RiCopyrightLine /></div>
+    </>
 
   )
 }
